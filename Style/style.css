@@ -701,10 +701,11 @@ nav a,
     border-radius: 0px 10px 10px 0px;
 }
 
-.search_11 i {
+.search_11 p {
     margin: 0px;
-    padding: 10px;
-    font-size: 20px;
+    padding: 7.5px;
+    font-size: 15px;
+    color: black;
 }
 
 
@@ -764,19 +765,26 @@ nav a,
 }
 
 .develop {
-    height: 50px;
+    height: auto;
     width: 100%;
+    padding: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #2d3933;
+    background-color: #00ff00;
 }
 
 .develop p {
-    color: white;
+    color: black;
     font-size: 18px;
 }
 
+.icon_for_me i {
+    font-size: 20px;
+    padding: 0 5px;
+    color: black;
+}
 
 
 
