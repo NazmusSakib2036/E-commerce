@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAKIB</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="/Images/icon_header.png">
+    <script src="Style/style.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html" class="aaa">E-Shop</a>
+
+        <!-- Menu Icon for smaller screens -->
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Main Links Container -->
+        <div class="all_proparti">
+            <a href="index.html">Home</a>
+            <a href="page/pages.html">Pages</a>
+            <a href="/page/Shop.html">Shop</a>
+            <a href="/page/Offers.html">Offers</a>
+        </div>
+
+        <!-- Search Box (always visible) -->
+        <div class="search">
+            <input type="search" name="search" id="search" placeholder="what are you looking for?">
+            <div class="search_1">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <!-- Account and Cart Icons (always visible) -->
+        <div class="cart_white_acc">
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href=""><i class="fa-solid fa-heart"></i></a>
+            <a href=""><i class="fa-solid fa-circle-user"></i></a>
+        </div>
+    </nav>
+
+
+
+    <div class="carousel">
+        <div class="slide active">
+            <div class="content">
+                <h5>Unleash Your Inner Fashionista with Our Women's Collection!</h5>
+                <h2>Chic Women's Wear Trends for 2024</h2>
+                <p>From elegant dresses to stylish blouses, explore the versatile pieces that empower your wardrobe.
+                    Embrace
+                    comfort without compromising on style.</p>
+                <div class="button_for_shop">
+                    <a href="#">Shop Now</a>
+                </div>
+            </div>
+            <div class="slide_image"><img src="Images/slide_7.png" alt="Fashionable Woman">
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="content">
+                <h5>Step into Style with Bold Choices!</h5>
+                <h2>Trendy Fall Outfits 2024</h2>
+                <p>Discover the latest in cozy yet chic styles perfect for fall. Stay warm while turning heads wherever
+                    you
+                    go.</p>
+                <div class="button_for_shop">
+                    <a href="#">Shop Now</a>
+                </div>
+            </div>
+            <div class="slide_image"><img src="Images/download-removebg-preview.png" alt="Fall Fashion">
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="content">
+                <h5>Elevate Your Everyday Look!</h5>
+                <h2>Street Style Essentials for 2024</h2>
+                <p>Find the perfect blend of comfort and fashion with our streetwear collection. Redefine casual with
+                    these
+                    essentials.</p>
+                <div class="button_for_shop">
+                    <a href="#">Shop Now</a>
+                </div>
+            </div>
+            <div class="slide_image"><img src="Images/slide_3.png" alt="Street Style Fashion">
+            </div>
+        </div>
+
+        <div class="carousel-indicators">
+            <span class="indicator active" onclick="goToSlide(0)"></span>
+            <span class="indicator" onclick="goToSlide(1)"></span>
+            <span class="indicator" onclick="goToSlide(2)"></span>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Feature Product -->
+
+    <p class="section-title">Featured Products</p>
+    <div class="product-grid">
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/Images/Watch For man.png" alt="Stylish Headphone" />
+                <div class="icons">
+                    <span class="icon">🛒</span>
+                    <span class="icon">❤️</span>
+                    <span class="icon">👁️</span>
+                </div>
+            </div>
+            <div class="product-info">
+                <h3>Stylish Headphone</h3>
+                <p class="product-code">H456</p>
+                <p class="price">৳ 500</p>
+            </div>
+        </div>
+
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/Images/Head_phone_red.png" alt="Stylish Headphone">
+                <div class="icons">
+                    <span class="icon">🛒</span>
+                    <span class="icon">❤️</span>
+                    <span class="icon">👁️</span>
+                </div>
+            </div>
+            <div class="product-info">
+                <h3>Stylish Headphone</h3>
+                <p class="product-code">H456</p>
+                <p class="price">৳ 3,000</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/Images/cam-2.png" alt="4K DSLR Camera">
+                <div class="icons">
+                    <span class="icon">🛒</span>
+                    <span class="icon">❤️</span>
+                    <span class="icon">👁️</span>
+                </div>
+            </div>
+            <div class="product-info">
+                <h3>4K DSLR Camera</h3>
+                <p class="product-code">C789</p>
+                <p class="price">৳ 20,000</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/Images/chair.png" alt="Cantilever chair">
+                <div class="icons">
+                    <span class="icon">🛒</span>
+                    <span class="icon">❤️</span>
+                    <span class="icon">👁️</span>
+                </div>
+            </div>
+            <div class="product-info">
+                <h3>Cantilever chair</h3>
+                <p class="product-code">F012</p>
+                <p class="price">৳ 5,000</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- support section -->
+
+    <div class="content-wrapper">
+        <p class="section-title">What E-Shop Offer!</p>
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <img src="/Images/Free shipping.png" alt="Free Shipping Icon">
+                <h3 class="feature-card-title">24/7 Support</h3>
+                <p class="feature-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus
+                    gravida.</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="/Images/Money back.png" alt="Money Back Icon">
+                <h3 class="feature-card-title">24/7 Support</h3>
+                <p class="feature-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus
+                    gravida.</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="/Images/Quality.png" alt="Quality Icon">
+                <h3 class="feature-card-title">24/7 Support</h3>
+                <p class="feature-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus
+                    gravida.</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="/Images/Customer service.png" alt="Customer Service Icon">
+                <h3 class="feature-card-title">24/7 Support</h3>
+                <p class="feature-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus
+                    gravida.</p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- top categories -->
+
+
+    <div class="category-wrapper">
+        <p class="section-title">Top Categories</p>
+        <div class="category-grid">
+
+            <div class="category-card">
+                <img src="/Images/Lenovo IdeaPad SLIM 3i (8) (83EL0014LK) Core-i5 13th Gen Laptop.jpg"
+                    alt="Mini LCW Chair">
+                <div class="view-shop-button">Shop Now</div>
+                <div class="category-name">Lenovo IdeaPad Laptop</div>
+                <div class="category-price">৳ 95,000</div>
+            </div>
+
+            <div class="category-card">
+                <img src="/Images/Hollow Heart Couple Rings Women Men.png" alt="Modern Sofa">
+                <div class="view-shop-button">Shop Now</div>
+                <div class="category-name">Smart Watch</div>
+                <div class="category-price">৳ 310</div>
+            </div>
+
+            <div class="category-card">
+                <img src="/Images/Key Specs of Yamaha R15 V4.png" alt="Dining Table">
+                <div class="view-shop-button">Shop Now</div>
+                <div class="category-name">Motor Bike</div>
+                <div class="category-price">৳ 6,50,000</div>
+            </div>
+
+            <div class="category-card">
+                <img src="/Images/Modern desk.png" alt="Modern desk">
+                <div class="view-shop-button">Shop Now</div>
+                <div class="category-name">Modern Desk</div>
+                <div class="category-price">৳ 10,000</div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!--all order item -->
+
+
+
+
+    <p class="section-title">PRODUCTS SERVED FOR YOU</p>
+    <div class="all_item">
+
+        <div class="product-item product-card">
+            <img src="/Images/Redmi Note 10S (Frost White, 8GB RAM,128 GB Storage) - Super Amoled Display.jpg"
+                alt="Smart Phone" height="120px" width="150px"><br>
+            <h3>Redmi Note 10S (Frost White, 8GB RAM,128 GB Storage) - Super Amoled Display</h3>
+            <p style="color: blue; font-size: 17px; margin-top: 6px; text-align: left;">৳ 27,000.00</p>
+            <div class="discount" style="display: flex; flex-direction: row;">
+                <p><del>৳ 27,999.00</del>
+                <p style="margin-left: 5px;">- 999</p>
+                </p>
+            </div>
+            <div class="buy_cart_pro">
+
+                <div class="cart"><a href=""><i class="fa-solid fa-heart"></i>&nbsp;Cart</a></div>
+                <div class="buy"><a href=""><i class="fa-solid fa-cart-shopping"></i>&nbsp;Buy</a></div>
+            </div>
+            <div class="rating" style="color: yellow; text-align: right;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+
+        </div>
+
+        <div class="product-item product-card">
+            <img src="/Images/Lenovo IdeaPad SLIM 3i (8) (83EL0014LK) Core-i5 13th Gen Laptop.jpg" alt="Laptop"
+                height="120px" width="150px"><br>
+            <h3> Lenovo IdeaPad SLIM 5i (8) (83EL0014LK) Core-i5 13th Gen Laptop </h3>
+            <p style="color: blue; font-size: 17px; margin-top: 6px; text-align: left;">৳ 95,000.00</p>
+            <div class="discount" style="display: flex; flex-direction: row;">
+                <p><del>৳ 1,35,000.00</del>
+                <p style="margin-left: 5px;">- 3000</p>
+                </p>
+            </div>
+            <div class="buy_cart_pro">
+
+                <div class="cart"><a href=""><i class="fa-solid fa-heart"></i>&nbsp;Cart</a></div>
+                <div class="buy"><a href=""><i class="fa-solid fa-cart-shopping"></i>&nbsp;Buy</a></div>
+            </div>
+            <div class="rating" style="color: yellow; text-align: right;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+        <div class="product-item product-card">
+            <img src="/Images/Watch For man.png" alt=" Men Watch" height="120px" width="150px"><br>
+            <h3>ROSRA Stainless Steel Analog Men Watchs</h3>
+            <p style="color: blue; font-size: 17px; margin-top: 6px; text-align: left;">৳ 320.00</p>
+            <div class="discount" style="display: flex; flex-direction: row;">
+                <p><del>৳ 700.00</del>
+                <p style="margin-left: 5px;">- 380</p>
+                </p>
+            </div>
+            <div class="buy_cart_pro">
+
+                <div class="cart"><a href=""><i class="fa-solid fa-heart"></i>&nbsp;Cart</a></div>
+                <div class="buy"><a href=""><i class="fa-solid fa-cart-shopping"></i>&nbsp;Buy</a></div>
+            </div>
+            <div class="rating" style="color: yellow; text-align: right;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+        <div class="product-item product-card">
+            <img src="/Images/Head_phone_red.png" alt="Women 3 pcs" height="120px" width="150px"><br>
+            <h3>CLB 510BT Wireless Headphones with Purebass Sound – Radios</h3>
+            <p style="color: blue; font-size: 17px; margin-top: 6px; text-align: left;">৳ 5,000.00</p>
+            <div class="discount" style="display: flex; flex-direction: row;">
+                <p><del>৳ 7,000.00</del>
+                <p style="margin-left: 5px;">- 2000</p>
+                </p>
+            </div>
+            <div class="buy_cart_pro">
+
+                <div class="cart"><a href=""><i class="fa-solid fa-heart"></i>&nbsp;Cart</a></div>
+                <div class="buy"><a href=""><i class="fa-solid fa-cart-shopping"></i>&nbsp;Buy</a></div>
+            </div>
+            <div class="rating" style="color: yellow; text-align: right;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+        <div class="product-item product-card">
+            <img src="/Images/A4tech Fstyler FB12 Multi-Mode Wireless Mouse.jpg" alt="Wireless Mouse" height="120px"
+                width="150px"><br>
+            <h3>A4tech Fstyler FB12 Multi-Mode Wireless Mouse</h3>
+            <p style="color: blue; font-size: 17px; margin-top: 6px; text-align: left;">৳ 1,000.00</p>
+            <div class="discount" style="display: flex; flex-direction: row;">
+                <p><del>৳ 1,299.00</del>
+                <p style="margin-left: 5px;">- 299</p>
+                </p>
+            </div>
+            <div class="buy_cart_pro">
+
+                <div class="cart"><a href=""><i class="fa-solid fa-heart"></i>&nbsp;Cart</a></div>
+                <div class="buy"><a href=""><i class="fa-solid fa-cart-shopping"></i>&nbsp;Buy</a></div>
+            </div>
+            <div class="rating" style="color: yellow; text-align: right;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+        <div class="product-item product-card">
+            <img src="/Images/Rapoo V500 PRO Backlit USB Mechanical Gaming Keyboard.jpg"
+                alt="Mechanical Gaming Keyboard" height="120px" width="150px"><br>
+            <h3>Rapoo V500 PRO Backlit USB Mechanical Gaming Keyboard</h3>
+            <p style="color: blue; font-size: 17px; margin-top: 6px; text-align: left;">৳ 2,750.00</p>
+            <div class="discount" style="display: flex; flex-direction: row;">
+                <p><del>৳ 3,040.00</del>
+                <p style="margin-left: 5px;">- 290</p>
+                </p>
+            </div>
+            <div class="buy_cart_pro">
+
+                <div class="cart"><a href=""><i class="fa-solid fa-heart"></i>&nbsp;Cart</a></div>
+                <div class="buy"><a href=""><i class="fa-solid fa-cart-shopping"></i>&nbsp;Buy</a></div>
+            </div>
+            <div class="rating" style="color: yellow; text-align: right;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+        <div class="product-item product-card">
+            <img src="/Images/cam-2.png" alt="Smart Phone" height="120px" width="150px"><br>
+            <h3>Canon EOS 850D + EF-S 18-55mm IS STM Lens</h3>
+            <p style="color: blue; font-size: 17px; margin-top: 6px; text-align: left;">৳ 3,168.00</p>
+            <div class="discount" style="display: flex; flex-direction: row;">
+                <p><del>৳ 3,589.00</del>
+                <p style="margin-left: 5px;">- 421</p>
+                </p>
+            </div>
+            <div class="buy_cart_pro">
+
+                <div class="cart"><a href=""><i class="fa-solid fa-heart"></i>&nbsp;Cart</a></div>
+                <div class="buy"><a href=""><i class="fa-solid fa-cart-shopping"></i>&nbsp;Buy</a></div>
+            </div>
+            <div class="rating" style="color: yellow; text-align: right;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+        <div class="product-item product-card">
+            <img src="/Images/Hollow Heart Couple Rings Women Men.png" alt="Couple Rings" height="120px"
+                width="150px"><br>
+            <h3>Hollow Heart Couple Rings Women Men 4mm/6mm Love Wedding Promise Finger Ring Titanium Steel Jewelry Gift
+                Never Fade</h3>
+            <p style="color: blue; font-size: 17px; margin-top: 6px; text-align: left;">৳ 310.00</p>
+            <div class="discount" style="display: flex; flex-direction: row;">
+                <p><del>৳ 400.00</del>
+                <p style="margin-left: 5px;">- 90</p>
+                </p>
+            </div>
+            <div class="buy_cart_pro">
+
+                <div class="cart"><a href=""><i class="fa-solid fa-heart"></i>&nbsp;Cart</a></div>
+                <div class="buy"><a href=""><i class="fa-solid fa-cart-shopping"></i>&nbsp;Buy</a></div>
+            </div>
+            <div class="rating" style="color: yellow; text-align: right;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+        <div class="product-item product-card">
+            <img src="/Images/Aquacool Rechargeable Cool Mist Fan With Water Tank 2.2L Capacity, For Air Cooling, White.webp"
+                alt="Cooling Fan" height="120px" width="150px"><br>
+            <h3>Aquacool Rechargeable Cool Mist Fan With Water Tank 2.2L Capacity, For Air Cooling, White</h3>
+            <p style="color: blue; font-size: 17px; margin-top: 6px; text-align: left;">৳ 9,152.00</p>
+            <div class="discount" style="display: flex; flex-direction: row;">
+                <p><del>৳ 10,000.00</del>
+                <p style="margin-left: 5px;">- 848</p>
+                </p>
+            </div>
+            <div class="buy_cart_pro">
+
+                <div class="cart"><a href=""><i class="fa-solid fa-heart"></i>&nbsp;Cart</a></div>
+                <div class="buy"><a href=""><i class="fa-solid fa-cart-shopping"></i>&nbsp;Buy</a></div>
+            </div>
+            <div class="rating" style="color: yellow; text-align: right;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+        <div class="product-item product-card">
+            <img src="/Images/Dahua LM28-F400 28 inch 60Hz 4K UHD Monitor.webp" alt="Smart LED TV" height="120px"
+                width="150px"><br>
+            <h3>Dahua LM28-F400 28 inch 60Hz 4K UHD Monitor</h3>
+            <p style="color: blue; font-size: 17px; margin-top: 6px; text-align: left;">৳ 37,500.00</p>
+            <div class="discount" style="display: flex; flex-direction: row;">
+                <p><del>৳ 39,000.00</del>
+                <p style="margin-left: 5px;">- 1,500</p>
+                </p>
+            </div>
+            <div class="buy_cart_pro">
+
+                <div class="cart"><a href=""><i class="fa-solid fa-heart"></i>&nbsp;Cart</a></div>
+                <div class="buy"><a href=""><i class="fa-solid fa-cart-shopping"></i>&nbsp;Buy</a></div>
+            </div>
+            <div class="rating" style="color: yellow; text-align: right;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+        <div class="product-item product-card">
+            <img src="/Images/Fantech Chief II HG20 RGB USB Gaming Headphone Sakura Edition.jpg" alt="Gaming Headphone"
+                height="120px" width="150px"><br>
+            <h3>Fantech Chief II HG20 RGB USB Gaming Headphone Sakura Edition</h3>
+            <p style="color: blue; font-size: 17px; margin-top: 6px; text-align: left;">৳ 1,600.00</p>
+            <div class="discount" style="display: flex; flex-direction: row;">
+                <p><del>৳ 1,700.00</del>
+                <p style="margin-left: 5px;">- 100</p>
+                </p>
+            </div>
+            <div class="buy_cart_pro">
+
+                <div class="cart"><a href=""><i class="fa-solid fa-heart"></i>&nbsp;Cart</a></div>
+                <div class="buy"><a href=""><i class="fa-solid fa-cart-shopping"></i>&nbsp;Buy</a></div>
+            </div>
+            <div class="rating" style="color: yellow; text-align: right;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+        <div class="product-item product-card">
+            <img src="/Images/Key Specs of Yamaha R15 V4.png" alt="Motor Bike" height="120px" width="150px"><br>
+            <h3>Key Specs of Yamaha R15 V4</h3>
+            <p style="color: blue; font-size: 17px; margin-top: 6px; text-align: left;">৳ 6,50,000.00</p>
+            <div class="discount" style="display: flex; flex-direction: row;">
+                <p><del>৳ 7,00,000.00</del>
+                <p style="margin-left: 5px;">- 50,000</p>
+                </p>
+            </div>
+            <div class="buy_cart_pro">
+
+                <div class="cart"><a href=""><i class="fa-solid fa-heart"></i>&nbsp;Cart</a></div>
+                <div class="buy"><a href=""><i class="fa-solid fa-cart-shopping"></i>&nbsp;Buy</a></div>
+            </div>
+            <div class="rating" style="color: yellow; text-align: right;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="browse_all">
+        <div class="browse">
+            <a href="">Browse All</a>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Comment Section -->
+    <div class="subscribe">
+        <p>Get Latest Update By Subscribe to Our Newsletter</p>
+
+        <div class="subscribe_fill">
+            <input type="mail" name="mail" id="mail" placeholder="E-mail">
+            <div class="search_11">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <div class="contacts">
+            <a href="index.html" style="color: blue; font-size: 30px; margin-bottom: 20px;">E-Shop</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Uttar+Mirpur+Dhaka+Bangladesh" target="_blank"><i
+                    class="fa-solid fa-location-dot"></i>&nbsp; Uttar-Mirpur, Dhaka, Bangladesh</a>
+            <a href="mailto:nazmuss024@gmail.com"><i class="fa-solid fa-envelope"></i> &nbsp; nazmuss024@gmail.com</a>
+            <a href="tel:+880 1313-186576"><i class="fa-solid fa-phone"></i>&nbsp; +880 1313-186576</a>
+        </div>
+
+        <div class="quick_link">
+            <p style="color: blue; font-size: 20px; margin-bottom: 20px;">Quick Link</p>
+            <a href=""><i class="fa-solid fa-angles-right"> &nbsp; </i> Shop Home</a>
+            <a href=""><i class="fa-solid fa-angles-right"> &nbsp; </i> My Account</a>
+            <a href=""><i class="fa-solid fa-angles-right"> &nbsp; </i> My Cart</a>
+            <a href=""><i class="fa-solid fa-angles-right"> &nbsp; </i> My Wishlist</a>
+            <a href=""><i class="fa-solid fa-angles-right"> &nbsp; </i> My Order</a>
+        </div>
+
+        <div class="information_link">
+            <p style="color: blue; font-size: 20px; margin-bottom: 20px;">Information Link</p>
+            <a href=""><i class="fa-solid fa-angles-right"> &nbsp; </i>FAQ'S</a>
+            <a href=""><i class="fa-solid fa-angles-right"> &nbsp; </i>Contact & Help</a>
+            <a href=""><i class="fa-solid fa-angles-right"> &nbsp; </i>Privacy Policy</a>
+            <a href=""><i class="fa-solid fa-angles-right"> &nbsp; </i>Terms & Conditions</a>
+            <a href=""><i class="fa-solid fa-angles-right"> &nbsp; </i>Refund Policy</a>
+        </div>
+
+        <div class="payment_method">
+            <p style="color: blue; font-size: 20px; margin-bottom: 20px;">We Accept Payments</p>
+            <div class="payment">
+                <img src="/Images/Nagad.png" alt="Nagad" height="60px" width="70px">
+                <img src="/Images/Cellfin.png" alt="Cellfin" height="60px" width="70px">
+                <img src="/Images/Upai.png" alt="Upai" height="60px" width="70px">
+                <img src="/Images/Roket.png" alt="Roket" height="60px" width="70px">
+                <img src="/Images/Visa master card.png" alt="Visa master card" height="60px" width="70px">
+                <img src="/Images/bkash.webp" alt="bkash" height="60px" width="70px">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="develop">
+        <p>© 2024. Developed with love by Nazmus Sakib</p>
+    </div>
+
+
+</body>
+
+</html>
